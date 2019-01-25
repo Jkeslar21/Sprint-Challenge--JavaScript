@@ -38,6 +38,7 @@ function greeting(first, last){
 
 // Explanation: 
 
+/* any variable declared outside of the function will be accessible inside the function.  This is known as lexical scope. */
 
 const external = "I'm outside the function";
 
