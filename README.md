@@ -1,5 +1,5 @@
 # Sprint Challenge: JavaScript Fundamentals
-
+ 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a survey of problems. This Sprint explored JavaScript Fundamentals. During this Sprint, you studied variables, functions, object literals, arrays, this keyword, prototypes, and class syntax. In your challenge this week, you will demonstrate proficiency by completing a survey of JavaScript problems.
 
 ## Instructions
@@ -30,14 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+The biggest difference between `.forEach` & `.map` would be that `.forEach` is calling a provided function to each element of the array but isn't returning anything, it simply is allowed to mutate the current array, while `.map` is actually creating a new array with returned values.
+
 2. What is the difference between a function and a method?
+Functions in JavaScript perform a task or calculate a value.  Methods differ from functions in that they are simply functions inside of objects. Both are functions, but Methods more specifically, must be inside of an object.
 
 3. What is closure?
 
+ A closure is simply a function with preserved data.  What I mean by this is that a closure is technically any function where you are using variables from outside the scope.  This is possible due to JavaScripts Lexical Scope nature.  Quite commonly, closures contain inner functions.
+
 4. Describe the four rules of the 'this' keyword.
 
-5. Why do we need super() in an extended class?
+The four rules of the 'this' keyword consist of bindings: Window, Implicit, Explicit, and New.
+A Window Binding is a default property of JavaScript, where the 'this" keyword automatically binds to the Window, unless otherwise prevented. An Implicit Binding specifically deals with objects, where it assigns its value to the left of the invoked method.  Explicit Bindings are bindings which are controlled within functions and may utilize `.call(), .apply(), or .bind()`.  New Bindings build new objects, and apply value to the `this` keyword by binding to a constructor function, which is commonly practiced by programmers to identify a constructor function by capitalizing the first letter of the function name.  This commonly practiced capitalization is not syntactically incorrect if not practiced, and will still achieve the same outcome.
 
+5. Why do we need super() in an extended class?
+We need super() to link the extended class to the properties or attributes of the class in which it is extending from. (Constructor Function).  Without it, and although JavaScript classes are abstractions, we couldn't utilize the "class" syntax.
+ 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
